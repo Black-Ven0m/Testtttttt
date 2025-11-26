@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Send Anonymous Message</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Send an anonymous message</h1>
+    <p class="hint">Koi name nahi, koi database nahi — bas message bhejo.</p>
+
+    <form id="msgForm" novalidate>
+      <label for="message">Message (required)</label>
+      <textarea id="message" name="message" rows="6" required placeholder="Type your message..."></textarea>
+
+      <div class="buttons">
+        <button type="submit" id="sendBtn">Send anonymously</button>
+        <button type="button" id="mailtoBtn">Open mail client (fallback)</button>
+      </div>
+
+      <p id="status" class="status" aria-live="polite"></p>
+    </form>
+
+    <footer>
+      <small>Deployable on GitHub Pages. Uses Formspree (replace endpoint in script.js)</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
