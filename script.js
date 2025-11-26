@@ -1,4 +1,4 @@
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xrbwgvdo";
 
 const form = document.getElementById("msgForm");
 const messageEl = document.getElementById("message");
